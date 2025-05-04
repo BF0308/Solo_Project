@@ -18,6 +18,10 @@ public class FollowCamara : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
+    }
+    private void FixedUpdate()
+    {
         if (target == null)//타겟이 없으면
             return;//리턴
 

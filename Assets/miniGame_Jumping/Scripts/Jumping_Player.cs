@@ -97,3 +97,4 @@ public class Jumping_Player : MonoBehaviour
         animator.SetInteger("IsDie", 1);//애니메이터에 
         gameManager.GameOver();//게임매니저에있는 게임오버 호출
     }
+}
