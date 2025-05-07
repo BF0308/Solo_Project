@@ -35,7 +35,7 @@ public class FollowCamera : MonoBehaviour
             pos.x = target.position.x + offsetX;
             pos.y = target.position.y + offsetY;
         }
-        else if (!GamesceneMove.isMain) // "MiniGame"은 미니게임 씬 이름으로 변경 필요
+        else if (!GamesceneMove.isMain)
         {
             pos.x = target.position.x + offsetX;
         }

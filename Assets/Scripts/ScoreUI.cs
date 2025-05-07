@@ -8,7 +8,7 @@ public class ScoreUI : MonoBehaviour
     public TextMeshProUGUI currentScoreText;
     public TextMeshProUGUI highScoreText;
     public TextMeshProUGUI coinText;
-    Score score;
+    public Score score;
     private void Start()
     {
         score = Score.Instance;

@@ -11,7 +11,8 @@ public class Score : MonoBehaviour
     public int score = 0;
     public int highScore = 0;
     public int currentScore = 0;
-    private ScoreUI scoreUI;
+    public ScoreUI scoreUI;
+    public GameObject ScoreCanvas;
     private void Awake()
     {
         if (Instance == null)
@@ -27,6 +28,7 @@ public class Score : MonoBehaviour
     }
     private void Start()
     {
+        ScoreCanvas.SetActive(false);
         AddScore(0);
     }
     public void AddScore(int Score)
@@ -46,6 +48,11 @@ public class Score : MonoBehaviour
             PlayerPrefs.SetInt("HighScore", currentScore);
             PlayerPrefs.Save();
         }
+    }
+    public void Scorereset()
+    {
+        Score.Instance.currentScore = 0;
+        Score.Instance.score = 0;
     }
 
 }
