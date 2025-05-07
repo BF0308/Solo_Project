@@ -311,6 +311,174 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: KnightP_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 416
+        width: 15
+        height: 23
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fb571530d9c59c41be8019e61bf4704
+      internalID: -1474180032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightP_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 416
+        width: 15
+        height: 23
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d508fbf04aadfdd489242f054e353720
+      internalID: -1174555639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightP_Idle_2
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 416
+        width: 15
+        height: 23
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd4a63f852f5dd941aaa6283be81d29e
+      internalID: 1004517295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightP_Idle_3
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 416
+        width: 15
+        height: 23
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb1fa1680dd608b4caf8eaf4df18ca65
+      internalID: -1958028803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 264
+        width: 14
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d87330ae94b68c5489895272fc495d6f
+      internalID: -172318377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 264
+        width: 14
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ac8fea24782dfd44ac8b8b813ab5497
+      internalID: -819474607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Idle_2
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 264
+        width: 14
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f636b54da40d55c459308979a33162d3
+      internalID: -1629874566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Idle_3
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 264
+        width: 14
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4d80aa7534d47941a88857391e50cf2
+      internalID: 362682416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -322,11 +490,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      0x72_DungeonTilesetII_v1.7_0: 1380908191
       Coin_0: -1789306119
       Coin_1: -1399304711
       Coin_2: -1047425688
       Coin_3: 129764078
+      KnightP_Idle_0: 1380908191
+      KnightP_Idle_1: -1174555639
+      KnightP_Idle_2: 1004517295
+      KnightP_Idle_3: -1958028803
       KnightP_Jump_0: -1704324307
       KnightP_Jump_1: -457305993
       KnightP_Jump_2: 1977193641
@@ -334,6 +505,10 @@ TextureImporter:
       KnightP_Walk_1: 1882910357
       KnightP_Walk_2: -514658581
       KnightP_Walk_3: -2029924507
+      NPC_Idle_0: -172318377
+      NPC_Idle_1: -819474607
+      NPC_Idle_2: -1629874566
+      NPC_Idle_3: 362682416
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

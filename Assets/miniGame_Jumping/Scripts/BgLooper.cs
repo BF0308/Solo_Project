@@ -8,7 +8,7 @@ public class BgLooper : MonoBehaviour
     public int numBgCount = 5;//백그라운드,탑그라운드,바텀그라운드 의 각각 총 갯수가 5개씩이라 5를 넣은것이다.
     public Vector3 obstacleLastPosition = Vector3.zero;//방해물 마지막위치는 0,0,0으로 설정
 
-    void Start()
+    void Start()//사실상 방해물, 코인 첫 생성해주는 구문
     {
         Obstacle[] obstacles = GameObject.FindObjectsOfType<Obstacle>();//방해물들을 배열에 저장 (Find같은 전체적으로 찾는 경우에는 무겁기때문에 start나Awake에서 많이 사용한다.)
         obstacleLastPosition = obstacles[0].transform.position;//첫번째로 받아온 방해물의 좌표값을 받아서 저장한다.
@@ -34,11 +34,17 @@ public class BgLooper : MonoBehaviour
             collision.transform.position = pos;//충돌체의 좌표값을 지정한다.
             return;//리턴
         }
+       
 
         Obstacle obstacle = collision.GetComponent<Obstacle>();//충돌했을때 충돌체가 방해물이면 obstacle이라는 변수에 선언한다.
         if (obstacle)//방해물이 있다면
         {
             obstacleLastPosition = obstacle.SetRandomPlace(obstacleLastPosition, obestacleCount);//다시 재생성
+            obstacle.CoinLife();
+
         }
+       
+        
+
     }
 }
