@@ -21,9 +21,11 @@ public class Obstacle : MonoBehaviour
     bool scored = false;
     private void Awake()
     {
+        
         gameManager = GameManager.Instance; //게임매니저의 인스턴스를 가져온다.
         animator = this.GetComponent<Animator>();
         score = Score.Instance;
+        scoreUI = score.scoreUI;
     }
     public Vector3 SetRandomPlace(Vector3 lastPosition, int obstacleCount)//랜덤으로 방해물을 생성하는 메서드(마지막포지션,방해물의갯수)
     {

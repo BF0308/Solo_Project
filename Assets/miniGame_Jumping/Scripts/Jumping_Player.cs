@@ -38,22 +38,13 @@ public class Jumping_Player : MonoBehaviour
     {
         if (isDead)//죽었으면
         {
-            if (deathCooldown <= 0)//쿨다운이 돌았으면
+            if (deathCooldown >= 0)
             {
-                if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))//스페이스바 혹은 마우스0번키를 눌렀을때
-                {
-                    // 게임 재시작
-
-                    gameManager.RestartGame();//게임을 재시작한다.
-
-
-                }
+                deathCooldown -= Time.deltaTime;
             }
-            else//쿨다운이 남았으면
-            {
-                deathCooldown -= Time.deltaTime;//쿨다운을 지나게한다.
-            }
+
         }
+
         else//죽지않았우면
         {
             if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))//스페이스바 또는 마우스왼클릭이 눌렸을때

@@ -14,44 +14,24 @@ public class GamesceneMove : MonoBehaviour
     public void BackMain()
     {
         isMain = true;
-        SceneManager.UnloadSceneAsync("miniGame");
-        EnableScene();
+        SceneManager.LoadScene("Main");
+        Score.Instance.Scorereset();
     }
     public void miniGameScene()
     {
         isMain = false;
-        SceneManager.LoadScene("miniGame", LoadSceneMode.Additive);
-        DisableScene();
-    }
-    public void DisableScene()
-    {
-        Scene targetScene = SceneManager.GetSceneByName("Main");
-
-
-        foreach (GameObject go in targetScene.GetRootGameObjects())
-        {
-            go.SetActive(false); // 상태는 그대로 유지됨!
-        }
-
+        SceneManager.LoadScene("miniGame");
+        Score.Instance.Scorereset();
     }
 
-    public void EnableScene()
-    {
-        Scene targetScene = SceneManager.GetSceneByName("Main");
-
-
-        foreach (GameObject go in targetScene.GetRootGameObjects())
-        {
-            go.SetActive(true); // 다시 활성화
-        }
-
-    }
     public void RestartButton()
     {
-        SceneManager.LoadScene("miniGame");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        Score.Instance.Scorereset();
     }
     public bool Ismain()
     {
         return isMain;
     }
+   
 }
